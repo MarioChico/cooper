@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/cooper.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <title>Test de Cooper</title>
+</head>
+<body>
+    <div id="table_png">
+            <div id="cabecera">
+                <h1>TEST <br>MENSUAL</h1>
+                <input type="text" name="full-name" id="full-name" placeholder="Nombre completo">
+                <h3>Max repeticiones en 1 min</h3>
+            </div>
+            <div id="reps_table">
+                <table >
+                    <thead>
+                        <tr>
+                            <th>MOVIMIENTO</th>
+                            <th>REPS</th>
+                            <th>VERSIÓN</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pull up</td>
+                            <td><input type="number"></td>
+                            <td><select name="version" id="version">
+                                <option value="c">Completa</option>
+                                <option value="m">Media</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td>Push up</td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Squats</td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>V-ups</td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Burpees</td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </div>          
+            <div>
+                <h3>Metros recorridos en 12 minutos</h3>
+                <p>1920m</p>
+                <p>Estas en Normal</p>
+            </div>
+        </div>
+    <div>
+        <p>Selecciona tu genero</p>
+        <p>Masculino</p>
+        <input type="radio" name="Femenino" id="">
+        <p>Femenino</p>
+        <input type="radio" name="Masculino" id="">
+        <p>Ingresa tu edad</p>
+        <input type="text" placeholder="tu edad aqui">
+        <p>Cuantas vueltas diste?</p>
+        <input type="number">
+        <input type="button" value="Calcular metros">
+    </div>
+    <input id="btn_convert" type="button" value="Convert to Image" />
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --sthenos-color:#c3ef7b;
+    --background-color: #f3f0e9;
+    --header-color: #000000;
+    --input-color: #dddddd;
+}
+body{
+    background-color: var(--background-color);
+    font-family: sans-serif;
+}
+
+p{
+    color: var(--sthenos-color);
+}
+#cabecera{
+    display: flex;
+    flex-direction: column;
+}
+h1,h2,h3{
+    margin: 0.5em 0 0.5em;
+    text-align: center;
+    color: var(--header-color)
+}
+input{
+    width: 5em;
+}
+
+
+#reps_table{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+table, th, td {
+    border: 1px solid var(--sthenos-color);
+    border-collapse: collapse;
+    margin: 4px;
+    width: 80%;
+    font-family: monospace;
+}
+thead{
+    color: var(--background-color);
+    background-color: var(--header-color);
+    height: 2.3em;
+}
+
+#full-name{
+    margin: 0 auto;
+    width: 50%;
+    background-color: var(--background-color);
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+#table_png{
+    background-color: var(--background-color);
+}
