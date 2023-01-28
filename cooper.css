@@ -1,5 +1,5 @@
 *{
-    box-sizing: content-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -9,9 +9,20 @@
     --header-color: #000000;
     --input-color: #dddddd;
 }
+@font-face {
+    font-family: AmericaMono;
+    src: url(assets/fonts/GT\ America\ Mono/GT-America-Mono-Black-Italic-Trial.otf);
+
+}
+@font-face {
+    font-family: PANGRAM;
+    src: url(assets/fonts/PP\ PANGRAM/GT-America-Mono-Light-Trial.otf);
+}
 body{
     background-color: var(--background-color);
-    font-family: sans-serif;
+}
+.performance{
+    margin-top: 1.5em;
 }
 
 p{
@@ -20,16 +31,22 @@ p{
 #cabecera{
     display: flex;
     flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
 }
-h1,h2,h3{
+h1,h2,h4{
     margin: 0.5em 0 0.5em;
     text-align: center;
-    color: var(--header-color)
+    color: var(--header-color);
+    font-family: AmericaMono;
 }
 input{
-    width: 5em;
+    margin: 1px;
+    width: 7em;
+    background-color: var(--background-color);
+    border: hidden;
+    height: fit-content;
 }
-
 
 #reps_table{
     margin: 0 auto;
@@ -38,11 +55,20 @@ input{
 }
 
 table, th, td {
-    border: 1px solid var(--sthenos-color);
+    border: 1px solid var(--header-color);
     border-collapse: collapse;
     margin: 4px;
     width: 80%;
     font-family: monospace;
+}
+td{
+    padding: 1em 0;
+    text-align: center;
+    margin: 0;
+    font-family: monospace;
+    height: 30px;
+    padding: 0;
+    border: none;
 }
 thead{
     color: var(--background-color);
@@ -57,6 +83,29 @@ thead{
     border-collapse: collapse;
     border-radius: 10px;
 }
+input[type='number']{
+    font-family: AmericaMono;
+    text-align: center;
+}
+#version{
+   width: 25vw;
+   height: 100%; 
+   background-color: var(--background-color);
+   border: none;
+}
+select:checked{
+    color: var(--sthenos-color);
+}
 #table_png{
     background-color: var(--background-color);
+    padding-top: 1.5em;
+}
+.green-data-row{
+    background-color: var(--sthenos-color);
+}
+#version-green-data-row{
+    background-color: var(--sthenos-color);
+    width: 25vw;
+    height: 100%; 
+    border: none;
 }

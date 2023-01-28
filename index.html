@@ -9,11 +9,13 @@
     <title>Test de Cooper</title>
 </head>
 <body>
-    <div id="table_png">
+    <section class="performance">
+        <div id="table_png">
             <div id="cabecera">
                 <h1>TEST <br>MENSUAL</h1>
                 <input type="text" name="full-name" id="full-name" placeholder="Nombre completo">
-                <h3>Max repeticiones en 1 min</h3>
+                <h4>1 MINUTO / MÁXIMO DE REPS</h4>
+                
             </div>
             <div id="reps_table">
                 <table >
@@ -30,28 +32,49 @@
                             <td><input type="number"></td>
                             <td><select name="version" id="version">
                                 <option value="c">Completa</option>
+                                <option value="m">Negativa</option>
+                                <option value="m">Liga negra</option>
+                                <option value="m">Liga roja</option>
+                                <option value="m">Liga azul turquesa</option>
+                                <option value="m">Liga verde</option>
+                                <option value="m">Liga azul rey</option>
                                 <option value="m">Media</option>
                             </select></td>
                         </tr>
                         <tr>
-                            <td>Push up</td>
-                            <td><input type="number"></td>
-                            <td><input type="number"></td>
+                            <td class="green-data-row">Push up</td>
+                            <td class="green-data-row"><input type="number" class="green-data-row"></td>
+                            <td><select name="version" id="version-green-data-row">
+                                <option value="c">Completa</option>
+                                <option value="m">Media</option>
+                                <option value="m">Inclinada</option>
+                                <option value="m">Reverencia</option>
+                            </select></td>
                         </tr>
                         <tr>
                             <td>Squats</td>
                             <td><input type="number"></td>
-                            <td><input type="number"></td>
+                            <td><select name="version" id="version">
+                                <option value="c">Completa</option></select></td>
                         </tr>
                         <tr>
-                            <td>V-ups</td>
-                            <td><input type="number"></td>
-                            <td><input type="number"></td>
+                            <td class="green-data-row">V-ups</td>
+                            <td class="green-data-row"><input type="number" class="green-data-row"></td>
+                            <td><select name="version" id="version-green-data-row">
+                                <option value="c">Completa</option>
+                                <option value="c">Media</option>
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td>Burpees</td>
                             <td><input type="number"></td>
-                            <td><input type="number"></td>
+                            <td><select name="version" id="version">
+                                <option value="c">Completa</option>
+                                <option value="c">Media Flexión</option>
+                                <option value="c">Sin Flexión</option>
+                                </select>
+                            </td>
                         </tr>
                     </tbody>
                     <tfoot></tfoot>
@@ -63,7 +86,8 @@
                 <p>Estas en Normal</p>
             </div>
         </div>
-    <div>
+    </section>
+        <div>
         <p>Selecciona tu genero</p>
         <p>Masculino</p>
         <input type="radio" name="Femenino" id="">
