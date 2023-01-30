@@ -30,49 +30,49 @@
                         <tr>
                             <td>Pull up</td>
                             <td><input type="number"></td>
-                            <td><select name="version" id="version">
+                            <td><select name="pull-version" id="pull-version" class="version">
                                 <option value="c">Completa</option>
-                                <option value="m">Negativa</option>
-                                <option value="m">Liga negra</option>
-                                <option value="m">Liga roja</option>
-                                <option value="m">Liga azul turquesa</option>
-                                <option value="m">Liga verde</option>
-                                <option value="m">Liga azul rey</option>
+                                <option value="n">Negativa</option>
+                                <option value="ln">Liga negra</option>
+                                <option value="lr">Liga roja</option>
+                                <option value="la">Liga azul turquesa</option>
+                                <option value="lv">Liga verde</option>
+                                <option value="lar">Liga azul rey</option>
                                 <option value="m">Media</option>
                             </select></td>
                         </tr>
                         <tr>
                             <td class="green-data-row">Push up</td>
                             <td class="green-data-row"><input type="number" class="green-data-row"></td>
-                            <td><select name="version" id="version-green-data-row">
+                            <td><select name="push-version" id="push-version" class="version-green-data-row">
                                 <option value="c">Completa</option>
                                 <option value="m">Media</option>
-                                <option value="m">Inclinada</option>
-                                <option value="m">Reverencia</option>
+                                <option value="i">Inclinada</option>
+                                <option value="r">Reverencia</option>
                             </select></td>
                         </tr>
                         <tr>
                             <td>Squats</td>
-                            <td><input type="number"></td>
-                            <td><select name="version" id="version">
+                            <td><input type="number" class="no-arrows"></td>
+                            <td><select name="squars-version" id="squats-version" class="version">
                                 <option value="c">Completa</option></select></td>
                         </tr>
                         <tr>
                             <td class="green-data-row">V-ups</td>
                             <td class="green-data-row"><input type="number" class="green-data-row"></td>
-                            <td><select name="version" id="version-green-data-row">
+                            <td><select name="vups-version" id="vups-version" class="version-green-data-row">
                                 <option value="c">Completa</option>
-                                <option value="c">Media</option>
+                                <option value="m">Media</option>
                                 </select>
                             </td>
                         </tr>
                         <tr>
                             <td>Burpees</td>
                             <td><input type="number"></td>
-                            <td><select name="version" id="version">
+                            <td><select name="burpees-version" id="burpees-version" class="version">
                                 <option value="c">Completa</option>
-                                <option value="c">Media Flexión</option>
-                                <option value="c">Sin Flexión</option>
+                                <option value="mf">Media Flexión</option>
+                                <option value="sf">Sin Flexión</option>
                                 </select>
                             </td>
                         </tr>
@@ -80,26 +80,41 @@
                     <tfoot></tfoot>
                 </table>
             </div>          
-            <div>
-                <h3>Metros recorridos en 12 minutos</h3>
-                <p>1920m</p>
+            <div id="cooper-result">
+                <h3>TEST DE COOPER</h3>
+                <div id="km-result" class="final-result">
+                    <p>RECORRISTE: </p>
+                </div>
+                <div id="satisfaction-result" class="final-result">
+                    <p>RESULTADO:</p>
+                </div>
+                
                 <p>Estas en Normal</p>
             </div>
         </div>
     </section>
+
+    <section id="cooper-calculator">
         <div>
-        <p>Selecciona tu genero</p>
-        <p>Masculino</p>
-        <input type="radio" name="Femenino" id="">
-        <p>Femenino</p>
-        <input type="radio" name="Masculino" id="">
-        <p>Ingresa tu edad</p>
-        <input type="text" placeholder="tu edad aqui">
-        <p>Cuantas vueltas diste?</p>
-        <input type="number">
-        <input type="button" value="Calcular metros">
-    </div>
-    <input id="btn_convert" type="button" value="Convert to Image" />
+            <p>Selecciona tu genero</p>
+            <p>Masculino</p>
+            <input type="radio" name="Femenino" id="">
+            <p>Femenino</p>
+            <input type="radio" name="Masculino" id="">
+            <p>Ingresa tu edad</p>
+            <input type="text" placeholder="tu edad aqui">
+            <p>Cuantas vueltas diste?</p>
+            <input type="number">
+            <input type="button" value="Calcular metros">
+        </div>
+    </section>
+<footer>
+    <section id="take-screen">
+        <input id="btn_convert" type="button" value="Convert to Image" />
+    </section>
+</footer>
+       
+    
     <script src="index.js"></script>
 </body>
 </html>

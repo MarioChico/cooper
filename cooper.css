@@ -18,16 +18,16 @@
     font-family: PANGRAM;
     src: url(assets/fonts/PP\ PANGRAM/GT-America-Mono-Light-Trial.otf);
 }
+html{
+    height: 100vh;
+}
 body{
     background-color: var(--background-color);
-}
-.performance{
-    margin-top: 1.5em;
+    overflow: hidden;
+    height: 100%;
 }
 
-p{
-    color: var(--sthenos-color);
-}
+
 #cabecera{
     display: flex;
     flex-direction: column;
@@ -86,8 +86,19 @@ thead{
 input[type='number']{
     font-family: AmericaMono;
     text-align: center;
+    appearance: none;
+    -moz-appearance: textfield;
 }
-#version{
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+select{
+    text-align: center;
+    line-height: 2;
+}
+.version{
    width: 25vw;
    height: 100%; 
    background-color: var(--background-color);
@@ -103,9 +114,27 @@ select:checked{
 .green-data-row{
     background-color: var(--sthenos-color);
 }
-#version-green-data-row{
+.version-green-data-row{
     background-color: var(--sthenos-color);
     width: 25vw;
     height: 100%; 
     border: none;
+}
+#cooper-result{
+    text-align: center;
+    margin: 5% auto;
+}
+#km-result{
+    background-color: var(--sthenos-color);
+}
+#satisfaction-result{
+    background-color: var(--header-color);
+}
+.final-result{
+    border-radius: 5px;
+    width: 60%;
+    margin: 0 auto;
+}
+#satisfaction-result p{
+    color: var(--sthenos-color);
 }
