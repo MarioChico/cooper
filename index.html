@@ -83,28 +83,37 @@
             <div id="cooper-result">
                 <h3>TEST DE COOPER</h3>
                 <div id="km-result" class="final-result">
-                    <p>RECORRISTE: </p>
+                    <p>RECORRISTE: </p><p>12 km en 12 min</p>
                 </div>
                 <div id="satisfaction-result" class="final-result">
-                    <p>RESULTADO:</p>
+                    <p>RESULTADO:</p> <p>MUY BUENO</p>
+                </div>
+                <div class="social-media">
+                    <p>@sthenos.mx</p>
+                    <p>#ZEROTOFITHERO</p>    
                 </div>
                 
-                <p>Estas en Normal</p>
             </div>
         </div>
     </section>
 
     <section id="cooper-calculator">
-        <div>
-            <p>Selecciona tu genero</p>
-            <p>Masculino</p>
-            <input type="radio" name="Femenino" id="">
-            <p>Femenino</p>
-            <input type="radio" name="Masculino" id="">
-            <p>Ingresa tu edad</p>
-            <input type="text" placeholder="tu edad aqui">
-            <p>Cuantas vueltas diste?</p>
-            <input type="number">
+        <div class="cooper-setting">
+            <p>Género: </p><select name="gender" id="gender">
+                <option value="femenino">Femenino</option>
+                <option value="masculino">Masculino</option>
+            </select>
+            <p>Edad: </p><select name="age" id="age">
+                <option value="one">13-14</option>
+                <option value="two">15-16</option>
+                <option value="three">17-20</option>
+                <option value="four">20-29</option>
+                <option value="five">30-39</option>
+                <option value="six">40-49</option>
+                <option value="seven">50+</option>
+            </select>
+            <p class="rounds">¿Cuantas vueltas diste?</p>
+            <input type="number" class="rounds">
             <input type="button" value="Calcular metros">
         </div>
     </section>
