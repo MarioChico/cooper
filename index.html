@@ -99,11 +99,11 @@
 
     <section id="cooper-calculator">
         <div class="cooper-setting">
-            <p>Género: </p><select name="gender" id="gender">
+            <label for="gender">Género</label><select required name="gender" id="gender">
                 <option value="femenino">Femenino</option>
                 <option value="masculino">Masculino</option>
             </select>
-            <p>Edad: </p><select name="age" id="age">
+            <label for="age">Edad</label><select required name="age" id="age">
                 <option value="one">13-14</option>
                 <option value="two">15-16</option>
                 <option value="three">17-20</option>
@@ -112,9 +112,9 @@
                 <option value="six">40-49</option>
                 <option value="seven">50+</option>
             </select>
-            <p class="rounds">¿Cuantas vueltas diste?</p>
-            <input type="number" class="rounds">
-            <input type="button" value="Calcular metros">
+            <label for="vuelticas" class="rounds">¿Cuantas vueltas diste?</label>
+            <input required type="number" class="rounds" id="vuelticas">
+            <input type="button" value="Calcular metros" id="calcular">
         </div>
     </section>
 <footer>

@@ -151,7 +151,7 @@ select:checked{
 .cooper-setting >*{
     display: inline-block;
 }
-.cooper-setting p{
+.cooper-setting label{
     font-weight: bold;
 }
 .cooper-setting select{

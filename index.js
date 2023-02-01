@@ -13,3 +13,14 @@ document.getElementById("btn_convert").addEventListener("click", function() {
 	let calculo = vueltas * 320
 
  }
+
+let vueltasValue = document.querySelector('#vuelticas')
+
+vueltasValue.onchange = function (){
+	let valor = vueltasValue.value;
+	let calculo = valor * 320
+	console.log(valor)
+	console.log(calculo)
+}
+
+let calcularVueltas = document.querySelector('#calcular')
