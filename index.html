@@ -14,6 +14,7 @@
             <div id="cabecera">
                 <h1>TEST <br>MENSUAL</h1>
                 <input type="text" name="full-name" id="full-name" placeholder="Nombre completo">
+                <p>FEBRERO 2023</p>
                 <h4>1 MINUTO / MÁXIMO DE REPS</h4>
                 
             </div>
@@ -83,10 +84,10 @@
             <div id="cooper-result">
                 <h3>TEST DE COOPER</h3>
                 <div id="km-result" class="final-result">
-                    <p>RECORRISTE: </p><p>12 km en 12 min</p>
+                    <p>RECORRISTE: </p><p class="text-result" id="number-result"></p>
                 </div>
                 <div id="satisfaction-result" class="final-result">
-                    <p>RESULTADO:</p> <p>MUY BUENO</p>
+                    <p>RESULTADO:</p> <p class="text-result" id="word-result"></p>
                 </div>
                 <div class="social-media">
                     <p>@sthenos.mx</p>
@@ -100,10 +101,12 @@
     <section id="cooper-calculator">
         <div class="cooper-setting">
             <label for="gender">Género</label><select required name="gender" id="gender">
-                <option value="femenino">Femenino</option>
-                <option value="masculino">Masculino</option>
+                <option value="">--Género--</option>
+                <option value="f">Femenino</option>
+                <option value="m">Masculino</option>
             </select>
             <label for="age">Edad</label><select required name="age" id="age">
+                <option value="">--Edad--</option>
                 <option value="one">13-14</option>
                 <option value="two">15-16</option>
                 <option value="three">17-20</option>
@@ -114,13 +117,12 @@
             </select>
             <label for="vuelticas" class="rounds">¿Cuantas vueltas diste?</label>
             <input required type="number" class="rounds" id="vuelticas">
-            <input type="button" value="Calcular metros" id="calcular">
+            <input type="button" value="CALCULAR" id="calcular" disabled>
         </div>
     </section>
 <footer>
-    <section id="take-screen">
-        <input id="btn_convert" type="button" value="Convert to Image" />
-    </section>
+        <input id="btn_convert" type="button" value="Screenshot" />
+
 </footer>
        
     

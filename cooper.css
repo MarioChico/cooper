@@ -31,6 +31,11 @@ body{
     flex-direction: column;
     width: 80vw;
     margin: 0 auto;
+    text-align: center;
+}
+#cabecera p{
+    margin-top: 1em;
+    font-family: AmericaMono;
 }
 h1,h2,h4{
     margin: 0.5em 0 0.5em;
@@ -75,9 +80,12 @@ thead{
 #full-name{
     margin: 0 auto;
     width: 50%;
+    height: 1.5em;
     background-color: var(--background-color);
     border-collapse: collapse;
-    border-radius: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: AmericaMono;
 }
 input[type='number']{
     font-family: AmericaMono;
@@ -136,6 +144,11 @@ select:checked{
 .final-result p{
     display: inline-block;
 }
+.final-result .text-result{
+    padding-left: 4%;
+    font-weight: bolder;
+    font-size: larger;
+}
 #satisfaction-result p{
     color: var(--sthenos-color);
 }
@@ -146,6 +159,7 @@ select:checked{
     margin-bottom: 3%;
 }
 .cooper-setting{
+    width: 80vw;
     margin: 0 auto;
 }
 .cooper-setting >*{
@@ -167,4 +181,37 @@ select:checked{
 .cooper-setting input[type=number]{
     background-color: var(--input-color);
     border-radius: 6px;
+    width: 8rem;
+    padding: .1em;
+}
+#calcular:disabled{
+    background-color: var(--input-color);
+    color: var(--header-color);
+}
+#calcular {
+    display: block;
+    margin: 5% auto;
+    width: 10em;
+    height: 2em;
+    background-color: var(--header-color);
+    color: var(--sthenos-color);
+    border-radius: 1em;
+    font-family: AmericaMono;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+#btn_convert{
+    background-color: var(--sthenos-color);
+    padding: 5px;
+    border-radius: 1rem;
+    margin: 1em 0;
+}
+@media only screen and (max-height: 800px){
+    body{
+        overflow: scroll;
+    }
 }
